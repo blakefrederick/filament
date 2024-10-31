@@ -1,11 +1,19 @@
 import { auth } from "@clerk/nextjs"
+import FileDropArea from "@/components/FileDropArea"
 
 function Dashboard() {
 
   const { userId } = auth()
 
   return (
-    <div>Dashboard - user is {userId}</div>
+    <div>
+        <div>
+            <FileDropArea />
+        </div>
+        <div className="fixed bottom-4 w-full text-center font-mono text-sm">
+            logged in user is {userId}
+        </div>
+    </div>
   )
 }
 
