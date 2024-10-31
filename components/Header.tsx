@@ -5,11 +5,11 @@ import { ThemeToggler } from "./ThemeToggler"
 
 function Header() {
   return (
-    <header className="flex items-center justify-between">
+    <header className="flex items-center justify-between p-2">
         <Link href="/" className="flex items-center space-x-2">
-            <div className="bg-green-500 w-fit">
-                <Image src="/filament-cross.png" alt="Filament" width={70} height={70} />
-            </div>
+        <div className="flex items-center justify-center">
+            <div className="w-16 h-16 rounded-full bg-gradient-to-r from-amber-200 via-green-400 to-orange-800 shadow-lg"></div>
+        </div>
             <h1 className="font-bold text-xl">Filament</h1>
         </Link>
 

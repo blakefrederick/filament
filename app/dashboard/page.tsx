@@ -1,6 +1,11 @@
+import { auth } from "@clerk/nextjs"
+
 function Dashboard() {
+
+  const { userId } = auth()
+
   return (
-    <div>Dashboard</div>
+    <div>Dashboard - user is {userId}</div>
   )
 }
 
